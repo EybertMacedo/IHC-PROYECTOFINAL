@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSA REGRESA</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- custom js file link -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"><i class="fas fa-paper-plane"></i>UNSA Regresa</a>
+
+        <nav class="navbar">
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">Home</a>
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="#book-form">Cuéntanos</a>
+            <a data-aos="zoom-in-left" data-aos-delay="600" href="#about">Vacunación</a>
+            <a data-aos="zoom-in-left" data-aos-delay="750" href="#destination">Viajes</a>
+            <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">Galería</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span data-aos="fade-up" data-aos-delay="150">UNSA</span>
+            <h3 data-aos="fade-up" data-aos-delay="300">Regresa a clases presenciales</h3>            
+            <a data-aos="fade-up" data-aos-delay="600" href="#book-form" class="btn">Comencemos</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- booking form section starts -->
+
+    <section class="book-form" id="book-form">
+
+        <div class="heading">
+            <span class="contact">cuéntanos</span>
+        </div>
+
+        <form action="#">
+            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+                <span>nombres</span>
+                <input type="text" placeholder="solo nombres" value="">
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+                <span>apellidos</span>
+                <input type="text" placeholder="solo apellidos" value="">
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+                <span>¿Cuántas vacunas has recibido?</span>
+                <input type="number" placeholder="número de vacunas" value="">
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="600" class="inputRadio">
+                <span>¿vives en provincia?</span><br>
+                <input type="radio" id="html" name="fav_language" value="">
+                <label for="html">si</label><br>
+                <input type="radio" id="css" name="fav_language" value="">
+                <label for="css">no</label><br>
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="750" class="inputBox">
+                <span>¿tienes alguna dificultad para regresar a la presencialidad?</span>
+                <textarea name="" placeholder="comenta tus dificultades" class="box" id="" cols="30" rows="10"></textarea>
+            </div>
+            <input data-aos="zoom-in" data-aos-delay="900" type="submit" value="enviar" class="btn">
+        </form>
+
+    </section>
+
+    <!-- booking form section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+
+        <div class="content" data-aos="fade-left" data-aos-delay="300">
+            <span>¿Te falta alguna vacuna contra el COVID-19?</span>
+            <h3>centros de vacunacion</h3>
+            <p>En la ciudad de Arequipa existen centros de vacunación, en los cuales puedes obtener la dosis que te falta.</p>
+            <p>Observa el mapa y escoge un centro de vacunación</p>
+            <a href="#" class="btn">ver mas</a>
+        </div>
+
+        <div class="centros-vacunacion" data-aos="fade-right" data-aos-delay="600">
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1VBa_BwqGchBrFfaRaXtBxz5mRIjXU2Y&hl=es&ehbc=2E312F" width="100%" height="500" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- destination section starts -->
+
+    <section class="destination" id="destination">
+
+        <div class="heading">
+            <span>empresas de viaje</span>
+            <h1>elija la que mas se acomode a tus necesidades</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <div class="image">
+                    <img src="images/ANDERRA TRAVEL.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Anderra Travel</h3>
+                    <p>Agencia de Viajes y Turismo en la ciudad de Arequipa, brindan tours no convencionales en toda la región Arequipa, Puno y Cusco.</p>
+                    <a href="https://www.anderratravel.com/">visitar sitio web <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+                <div class="image">
+                    <img src="images/AREQUIPA TOURS.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Arequipa Tours</h3>
+                    <p>Empresa alojada en Arequipa que busca ser una de las empresas turísticas más grandes del país brindando experiencias únicas a los viajeros.</p>
+                    <a href="https://www.arequipatoursagencia.com/">visitar sitio web <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="450">
+                <div class="image">
+                    <img src="images/REDBUS.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>RedBus AQP</h3>
+                    <p>Empresa de viajes que ofrece salidas desde y hacia Arequipa.</p>
+                    <a href="#">visitar sitio web <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+                <div class="image">
+                    <img src="images/KULLAY.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>kullay travel perú</h3>
+                    <p>Kullay travel perú se enfoca en viajes a todo el perú y tambien a arequipa</p>
+                    <a href="https://kullaytravelperu.com/promociones/paquetes-turisticos/arequipa-paquetes-turisticos">visitar sitio web <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="750">
+                <div class="image">
+                    <img src="images/CONRESA.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Conresa Tours AQP</h3>
+                    <p>Su misión es tener siempre a un turista satisfecho de haber conocido y haber tenido una estadía placentera en su viaje a Arequipa.</p>
+                    <a href="http://conresatours.com.pe/arequipa/">visitar sitio web <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="900">
+                <div class="image">
+                    <img src="images/civa.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>CIVA tours</h3>
+                    <p>Son una empresa de transporte terrestre innovadora y comprometida en brindar un servicio de calidad, seguro y cómodo.</p>
+                    <a href="https://www.civa.com.pe/destinos/pasajes-arequipa-bus">visitar sitio web <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+          
+
+        </div>
+
+    </section>
+
+    <!-- destination section ends -->
+
+    <!-- gallery section starts -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="heading">
+            <span>pones titulo a esta galeria p xd</span>
+            <h1>algunas fotos xd</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                <img src="images/gallery-img-1.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="images/gallery-img-2.jpg" alt="">
+                <span>travel spot</span>
+                <h3>greenland</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="images/gallery-img-5.jpg" alt="">
+                <span>travel spot</span>
+                <h3>brazil</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                <img src="images/gallery-img-6.jpg" alt="">
+                <span>travel spot</span>
+                <h3>maldive</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                <img src="images/gallery-img-7.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                <img src="images/gallery-img-8.jpg" alt="">
+                <span>travel spot</span>
+                <h3>alaska</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <a href="#" class="logo"><i class="fas fa-paper-plane"></i>UNSA Regresa </a>
+                <p>Nuestro objetivo es facilitar el regreso a la presencialidad de los estudiantes universitarios.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+                <h3>enlaces de la página</h3>
+                <a href="#home" class="links"><i class="fas fa-arrow-right"></i> home </a>
+                <a href="#book-form" class="links"><i class="fas fa-arrow-right"></i> cuéntanos </a>
+                <a href="#about" class="links"><i class="fas fa-arrow-right"></i> vacunación </a>
+                <a href="#destination" class="links"><i class="fas fa-arrow-right"></i> viajes </a>
+                <a href="#gallery" class="links"><i class="fas fa-arrow-right"></i> gallery </a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="450">
+                <h3>contact info</h3>
+                <p><i class="fas fa-map"></i> Arequipa, Peru </p>
+                <p><i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p><i class="fas fa-envelope"></i> UNSARegresa@gmail.com </p>
+                <p><i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+                <h3>boletín informativo</h3>
+                <p>suscríbete para más actualizaciones</p>
+                <form action="#">
+                    <input type="email" name="" placeholder="ingresa tu correo" class="email" id="">
+                    <input type="submit" value="suscríbete" class="btn">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="credit">creado por <span>grupo sport nacha</span> | todos los derechos reservados   !</div>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+    </script>
+
+</body>
+</html>
