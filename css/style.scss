@@ -92,6 +92,7 @@ section{
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 9%;
+    border-bottom: $border;
 
     .navbar a{
         font-size: 1.7rem;
@@ -101,6 +102,58 @@ section{
 
         &:hover{
             color: $blue;
+        }
+    }
+
+    .search{
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        font-size: 2rem;
+        color: $light-color;
+        margin-left: .5rem;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover{
+            color: $blue;
+        }
+    }
+
+    .search-form{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: $bg-color;
+        display: flex;
+        align-items: center;
+        padding: 0 9%;
+        border-top: $border;
+        border-bottom: $border;
+        height: 6rem;
+        gap: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        &.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        input{
+            width: 100%;
+            background: none;
+            color: $white;
+            font-size: 1.8rem;
+        }
+
+        label{
+            font-size: 2rem;
+            cursor: pointer;
+            color: $light-color;
+
+            &:hover{
+                color: $blue;
+            }
         }
     }
 
@@ -129,14 +182,14 @@ section{
 
 .home{
     margin: 0 auto;
-    margin-top: 9rem;
+    margin-top: 6.5rem;
     width: 90%;
     border-radius: 1rem;
     background:linear-gradient($black-bg, $black-bg), url(../images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    min-height: 80vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -519,7 +572,6 @@ section{
     }
 
     .home{
-        margin-top: 10rem;
         
         .content{
             

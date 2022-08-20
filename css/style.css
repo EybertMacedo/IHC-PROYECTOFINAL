@@ -90,6 +90,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5rem 9%;
+  border-bottom: 0.2rem solid #9a626b;
 }
 
 .header .navbar a {
@@ -100,6 +101,64 @@ section {
 }
 
 .header .navbar a:hover {
+  color: #9a626b;
+}
+
+.header .search {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  color: #aaa;
+  margin-left: .5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header .search:hover {
+  color: #9a626b;
+}
+
+.header .search-form {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 9%;
+  border-top: 0.2rem solid #9a626b;
+  border-bottom: 0.2rem solid #9a626b;
+  height: 6rem;
+  gap: 1rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .search-form.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header .search-form input {
+  width: 100%;
+  background: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.header .search-form label {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.header .search-form label:hover {
   color: #9a626b;
 }
 
@@ -127,7 +186,7 @@ section {
 
 .home {
   margin: 0 auto;
-  margin-top: 9rem;
+  margin-top: 6.5rem;
   width: 90%;
   border-radius: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat;
@@ -137,7 +196,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 95vh;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -534,9 +593,6 @@ section {
     margin: 2rem;
     font-size: 2rem;
     display: block;
-  }
-  .home {
-    margin-top: 10rem;
   }
   .home .content span {
     font-size: 8vw;
