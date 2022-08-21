@@ -1,6 +1,7 @@
 let navbar = document.querySelector('.header .navbar');
 let searchBtn = document.querySelector('#search-btn');
 let searchForm = document.querySelector('.header .search-form');
+let numberInput = document.querySelector('#inputNumero');
 
 searchBtn.onclick = () =>{
     searchBtn.classList.toggle('fa-times');
@@ -21,3 +22,7 @@ document.querySelectorAll('.about .video-container .controls .control-btn').forE
         document.querySelector('.about .video-container .video').src = src;
     }
 })
+
+numberInput.addEventListener('input', () =>{
+    
+});
