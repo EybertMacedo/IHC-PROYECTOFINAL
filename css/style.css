@@ -657,6 +657,24 @@ section {
   color: #9a626b;
 }
 
+@media (max-width: 1600px) {
+  .subscribe {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .subscribe {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .subscribe {
+    width: 80%;
+  }
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -666,6 +684,15 @@ section {
   }
   section {
     padding: 3rem 2rem;
+  }
+  .subscribe {
+    width: 80%;
+  }
+}
+
+@media (max-width: 880px) {
+  .subscribe {
+    width: 90%;
   }
 }
 
@@ -714,6 +741,9 @@ section {
   }
   .book-form {
     width: 90%;
+  }
+  .subscribe {
+    width: 98%;
   }
 }
 /*# sourceMappingURL=style.css.map */
