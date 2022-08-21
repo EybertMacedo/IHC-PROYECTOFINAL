@@ -318,6 +318,115 @@ section {
   font-weight: bolder;
 }
 
+.subscribe {
+  width: 40%;
+  font-size: 2rem;
+  margin: 1rem auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+  background: #222;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+  padding: 25px;
+  min-height: 90vh;
+}
+
+.subscribe .contact {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.subscribe form {
+  padding: 20px;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  color: #aaa;
+}
+
+.subscribe form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+.subscribe form .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+}
+
+.subscribe form .row .col .title {
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.subscribe form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.subscribe form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.subscribe form .row .col .inputBox input {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.subscribe form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.subscribe form .row .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  -webkit-filter: drop-shadow(0 0 1px #000);
+          filter: drop-shadow(0 0 1px #000);
+}
+
+.subscribe form .row .col .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.subscribe form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.subscribe form .btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #fff;
+  color: #9a626b;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.subscribe form .btn:hover {
+  background: #9a626b;
+  color: #fff;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,18 +643,6 @@ section {
 .footer .box-container .box .links i {
   padding-right: .5rem;
   color: #9a626b;
-}
-
-.footer .box-container .box form .email {
-  width: 100%;
-  border-radius: 5rem;
-  border: 0.2rem solid #9a626b;
-  background: none;
-  font-size: 1.5rem;
-  text-transform: none;
-  color: #aaa;
-  margin-bottom: 1rem;
-  padding: 1.2rem 1.4rem;
 }
 
 .credit {
