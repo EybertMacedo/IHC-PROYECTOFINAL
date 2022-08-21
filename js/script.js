@@ -1,7 +1,6 @@
 let navbar = document.querySelector('.header .navbar');
 let searchBtn = document.querySelector('#search-btn');
 let searchForm = document.querySelector('.header .search-form');
-let numberInput = document.querySelector('#inputNumero');
 
 searchBtn.onclick = () =>{
     searchBtn.classList.toggle('fa-times');
@@ -15,14 +14,3 @@ document.querySelector('#menu-btn').onclick = () =>{
 window.onscroll = () =>{
     navbar.classList.remove('active');
 }
-
-document.querySelectorAll('.about .video-container .controls .control-btn').forEach(btn =>{
-    btn.onclick = () =>{
-        let src = btn.getAttribute('data-src');
-        document.querySelector('.about .video-container .video').src = src;
-    }
-})
-
-numberInput.addEventListener('input', () =>{
-    
-});
