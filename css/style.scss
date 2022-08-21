@@ -47,6 +47,67 @@ body{
     overflow: hidden;
 }
 
+body.active{
+    background: $white;
+
+    .header{
+        background: $white;
+
+        .logo{
+            color: $black;
+        }
+
+        .navbar a{
+            color: $black;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+
+        .search #search-btn{
+            color: $black;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+
+    #cenVac{
+        color: $black;
+    }
+
+    .about .content p{
+        color: $black;
+    }
+
+    #titulo{
+        color: $black;
+    }
+
+    #galer{
+        color: $black;
+    }
+    
+    #destin{
+        color: $black;
+    }
+
+    .gallery .box-container .box span{
+        color: $black;
+    }
+
+    .footer .box-container .box p{
+        color: $black;
+    }
+
+    .footer .box-container .box .links{
+        color: $black;
+    }
+
+}
+
 section{
     padding:3rem 9%;
 }
@@ -106,18 +167,21 @@ section{
     }
 
     .search{
+        display: flex;
         height: 4.5rem;
         width: 4.5rem;
         line-height: 4.5rem;
         font-size: 2rem;
         color: $light-color;
         margin-left: .5rem;
+        margin-top: 2rem;
         text-align: center;
         cursor: pointer;
 
-        &:hover{
+        #search-btn:hover{
             color: $blue;
         }
+
     }
 
     .search-form{
@@ -159,6 +223,22 @@ section{
 
     .btn{
         margin-top: 0;
+    }
+}
+
+#theme-toggler{
+    margin-left: 3rem;
+    margin-top: -1rem;
+    padding-top: 1rem;
+    position: fixed;
+    background: black;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+    &:hover{
+        color: $black;
+        background: $white;
     }
 }
 
@@ -651,11 +731,19 @@ section{
         width: 80%;
     }
 
+    .header .search{
+        margin-right: 2rem;
+    }
+
 }
 
 @media (max-width: 880px){
     .subscribe{
         width: 90%;
+    }
+
+    .header .search{
+        margin-right: 2rem;
     }
 }
 
@@ -699,6 +787,10 @@ section{
     .book-form{
         width: 70%;
     }
+
+    .header .search{
+        margin-right: 2rem;
+    }
 }
 
 @media (max-width:450px){
@@ -721,6 +813,10 @@ section{
 
     .subscribe{
         width: 98%;
+    }
+
+    .header .search{
+        margin-right: 2rem;
     }
 
 }

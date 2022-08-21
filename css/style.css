@@ -37,6 +37,66 @@ body {
   overflow: hidden;
 }
 
+body.active {
+  background: #fff;
+}
+
+body.active .header {
+  background: #fff;
+}
+
+body.active .header .logo {
+  color: #111;
+}
+
+body.active .header .navbar a {
+  color: #111;
+}
+
+body.active .header .navbar a:hover {
+  color: #9a626b;
+}
+
+body.active .header .search #search-btn {
+  color: #111;
+}
+
+body.active .header .search #search-btn:hover {
+  color: #9a626b;
+}
+
+body.active #cenVac {
+  color: #111;
+}
+
+body.active .about .content p {
+  color: #111;
+}
+
+body.active #titulo {
+  color: #111;
+}
+
+body.active #galer {
+  color: #111;
+}
+
+body.active #destin {
+  color: #111;
+}
+
+body.active .gallery .box-container .box span {
+  color: #111;
+}
+
+body.active .footer .box-container .box p {
+  color: #111;
+}
+
+body.active .footer .box-container .box .links {
+  color: #111;
+}
+
 section {
   padding: 3rem 9%;
 }
@@ -105,17 +165,21 @@ section {
 }
 
 .header .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 2rem;
   color: #aaa;
   margin-left: .5rem;
+  margin-top: 2rem;
   text-align: center;
   cursor: pointer;
 }
 
-.header .search:hover {
+.header .search #search-btn:hover {
   color: #9a626b;
 }
 
@@ -164,6 +228,22 @@ section {
 
 .header .btn {
   margin-top: 0;
+}
+
+#theme-toggler {
+  margin-left: 3rem;
+  margin-top: -1rem;
+  padding-top: 1rem;
+  position: fixed;
+  background: black;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+#theme-toggler:hover {
+  color: #111;
+  background: #fff;
 }
 
 .logo {
@@ -688,11 +768,17 @@ section {
   .subscribe {
     width: 80%;
   }
+  .header .search {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 880px) {
   .subscribe {
     width: 90%;
+  }
+  .header .search {
+    margin-right: 2rem;
   }
 }
 
@@ -727,6 +813,9 @@ section {
   .book-form {
     width: 70%;
   }
+  .header .search {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -744,6 +833,9 @@ section {
   }
   .subscribe {
     width: 98%;
+  }
+  .header .search {
+    margin-right: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
